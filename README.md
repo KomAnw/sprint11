@@ -16,5 +16,5 @@ ES6, babel, ООП, HTML5, CSS3, BEM, Webpack
 - Разместить production-билд на github pages - `npm run deploy`
 
 ## gh-pages:
-[gh-pages]: https://komanw.github.io/Mesto-webpack/
+[gh-pages](https://komanw.github.io/Mesto-webpack/)
 
