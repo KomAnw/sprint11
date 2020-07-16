@@ -1,4 +1,4 @@
-  class Card{
+export class Card{
 	constructor({name, link}, openImgfunc, template){
 		this.template = template
 		this.name = name;

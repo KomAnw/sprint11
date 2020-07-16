@@ -1,4 +1,4 @@
-class CardInfo{
+export class CardInfo{
 	constructor(obj, popup){
 		this.obj = obj;
 		this.popup = popup;
