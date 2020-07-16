@@ -27,8 +27,10 @@ import {UserInfo} from './UserInfo.js';
 	let aboutUser = document.querySelector('.user-info__job');
 	const template = document.querySelector('#card').content.querySelector('.place-card');
 
+	const server = NODE_ENV === 'development' ? 'http://praktikum.tk' : 'https://praktikum.tk';
+
 	const api = new Api({
-		url: 'https://praktikum.tk/cohort11',
+		url: `${server}/cohort11`,
 		headers: {
 			authorization: 'e5cf0ae6-c049-4812-8bb5-267f014b9213',
 			'Content-Type': 'application/json'
