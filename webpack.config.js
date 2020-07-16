@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: './src/js/index.js',
-  output:{
+  output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][chunkhash].js'
   },
@@ -26,9 +26,9 @@ module.exports = {
         use: [
           (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
           {
-            loader:'css-loader',
+            loader: 'css-loader',
             options: {
-                importLoaders: 2
+              importLoaders: 2
             }
           },
           'postcss-loader'
@@ -38,7 +38,7 @@ module.exports = {
         test: /\.woff(2)?$/,
         use: {
           loader: 'file-loader',
-          options:{
+          options: {
             name: './fonts/[name].[ext]'
           }
         }
@@ -83,6 +83,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+
       filename: 'index.html'
     }),
     new MiniCssExtractPlugin({
@@ -91,7 +92,7 @@ module.exports = {
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: 
+      cssProcessorPluginOptions:
       {
         preset: ['default'],
       },
