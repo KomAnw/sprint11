@@ -1,4 +1,4 @@
-class Popup{
+export class Popup{
 	constructor(obj, container, userInfo, validatorCallback, cardInfoCreate){
 		this.title = obj.title;
 		this.firstPlaceHolder = obj.firstPlaceHolder;

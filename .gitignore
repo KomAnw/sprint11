@@ -1,0 +1,6 @@
+dist/
+node_modules/
+.settings/
+.vscode/
+.DS_Store
+.vscode
