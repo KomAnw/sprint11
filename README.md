@@ -6,7 +6,7 @@ Version 1.0.0
 Проект для демонстрции настройки webpack
 
 ## Стэк технологий:
-ES6, babel, ООП, HTML5, CSS3, BEM, Webpack
+ES6, babel, HTML5, CSS3, Webpack, REST API
 
 ## Инструкция по запуску
 - Скачать или склонировать репозитори
