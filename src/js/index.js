@@ -27,7 +27,7 @@ import {UserInfo} from './UserInfo.js';
 	let aboutUser = document.querySelector('.user-info__job');
 	const template = document.querySelector('#card').content.querySelector('.place-card');
 
-	const server = NODE_ENV === 'development' ? 'http://praktikum.tk' : 'https://praktikum.tk';
+	const server = NODE_ENV === 'development' ? 'https://nomoreparties.co' : 'https://nomoreparties.co';
 
 	const api = new Api({
 		url: `${server}/cohort11`,
